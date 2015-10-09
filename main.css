@@ -186,6 +186,7 @@ footer{
   display: inline-block;
   clear:both;
   position: absolute;
+  background-color: blue;
 }
 
 ul.botimages {
@@ -194,6 +195,7 @@ ul.botimages {
   padding:0;
   margin:0;
   position: static;
+  background-color: white;
 }
 .botimages li{
   height:100%;
