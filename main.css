@@ -13,7 +13,12 @@ li {
 body {
   padding:5px
 }
-
+img {
+  opacity: 0.5;
+}
+img:hover {
+  opacity: 1.0;
+}
 /*****************************************
 NAVIGATION
 ******************************************/
@@ -38,7 +43,7 @@ ul.navigation {
    width:49%;
    text-align: center;
    height:95%;
-   background-color: yellow;
+   color:#fff;
  }
 
 /*****************************************
@@ -52,12 +57,23 @@ header {
   height:500px;
   display: inline-block;
   margin:0 auto;
-  background-color: purple;
+  background-image:url(images/bighead.jpg);
+  background-size:100%;
 }
+
 
 .title {
   text-align: center;
   padding:10% 0;
+  color:#fff;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 24px;
 }
 
 
@@ -114,12 +130,12 @@ nav#mainnav {
 
 }
 
-div#circleimage {
-  border:1px black solid;
+#circleimage {
   border-radius: 100%;
-  width:30%;
-  align-self: center;
-  margin:0 auto;
+  width: 30%;
+  position: relative;
+  left: 35%;
+}
 }
 ul.subleftborder {
   display: inline-block;
@@ -138,11 +154,10 @@ ul.subleftborder {
 }
 
 
-div#surferpic {
-  border:1px black solid;
+img#surferpic {
   width:100%;
-  height:200px;
 }
+
 .sub ul {
   padding:0;
 }
@@ -170,26 +185,57 @@ footer{
   width: 100%;
   display: inline-block;
   clear:both;
+  position: absolute;
 }
 
 ul.botimages {
-  height:60%;
+  height:375px;
   width:100%;
   padding:0;
   margin:0;
+  position: static;
 }
 .botimages li{
-  height:99%;
-  text-align: center;
+  height:100%;
   width:25%;
   padding:0;
   margin:0;
   display:inline-block;
   vertical-align: top;
+  opacity: 0.5;
+}
+.botimages li:hover {
+  opacity: 1.0;
+}
+.botimages > li > span {
+  text-align: left;
+  position: absolute;
+  bottom:0;
+  vertical-align: top;
+  display:block;
+  margin-right:30%;
+}
+li#liOne {
+  background-image: url(images/sushi1.jpg);
+  background-size: 100%;
+}
+li#liTwo {
+  background-image: url(images/agricola2.jpg);
+  background-size: 100%;
+}
+li#liThree {
+  background-image: url(images/settlers3.jpg);
+  background-size: 100%;
+}
+li#liFour {
+  background-image: url(images/tokaido4.jpg);
+  background-size: 100%;
 }
 
 nav.footerlinks {
   width:100%;
+  background-color: navy;
+  position: absolute;
 }
 .footerlinks ul {
   width:98%;
