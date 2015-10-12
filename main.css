@@ -24,7 +24,7 @@ NAVIGATION
 ******************************************/
  nav {
    width:99%;
-   height:80px;
+   height:14%;
    margin: 0px auto;
    padding 2px auto;
  }
@@ -59,6 +59,7 @@ header {
   margin:0 auto;
   background-image:url(images/bighead.jpg);
   background-size:100%;
+  background-repeat:no-repeat;
 }
 
 
@@ -177,77 +178,83 @@ li.extrapad {
   padding:25px 0;
 }
 
+
+/*****************************************
+redonebottom
+******************************************/
+
+#bottom {
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+#bottom > h1 {
+  text-align: center;
+}
+
+div.imagesbot {
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+.indiv {
+  width: 24.8%;
+  margin-bottom: -5px;
+  vertical-align: top;
+  display: inline-block;
+  margin-left: -5px;
+  background-color: blue;
+  overflow: hidden;
+  position: relative;
+  font-size:0;
+}
+
+.indiv:hover span {
+  color:lightblue;
+}
+
+.indiv > img {
+  width:100%;
+}
+.indiv > span {
+  position: absolute;
+  color: #FBFBFD;
+  width: 100%;
+  bottom: 2%;
+  font-size: 2rem;
+  text-align: left;
+  z-index: +1;
+}
+.imagesbot div:nth-child(1) {
+  margin-left:0;
+
+}
+
+
+
+
+
 /*****************************************
 FOOTER
 ******************************************/
 
-footer{
-  width: 100%;
-  display: inline-block;
-  clear:both;
-  position: absolute;
-  background-color: blue;
-}
-
-ul.botimages {
-  height:375px;
-  width:100%;
-  padding:0;
-  margin:0;
-  position: static;
-  background-color: white;
-}
-.botimages li{
-  height:100%;
-  width:25%;
-  padding:0;
-  margin:0;
-  display:inline-block;
-  vertical-align: top;
-  opacity: 0.5;
-}
-.botimages li:hover {
-  opacity: 1.0;
-}
-.botimages > li > span {
-  text-align: left;
-  position: absolute;
-  bottom:0;
-  vertical-align: top;
-  display:block;
-  margin-right:30%;
-}
-li#liOne {
-  background-image: url(images/sushi1.jpg);
-  background-size: 100%;
-}
-li#liTwo {
-  background-image: url(images/agricola2.jpg);
-  background-size: 100%;
-}
-li#liThree {
-  background-image: url(images/settlers3.jpg);
-  background-size: 100%;
-}
-li#liFour {
-  background-image: url(images/tokaido4.jpg);
-  background-size: 100%;
-}
-
 nav.footerlinks {
   width:100%;
   background-color: navy;
-  position: absolute;
 }
 .footerlinks ul {
   width:98%;
-  margin:auto 0;
-  position:relative;
-  top: 40%;
+  margin-top:1%;
+  margin-bottom: 1%;
+  display:inline-block;
+
 }
 .footerlinks > ul > li {
   width: 48%;
   text-align: center;
+
 }
 ul.deeperfoot {
   display:inline-block;
